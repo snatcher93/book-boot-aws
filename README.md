@@ -7,3 +7,7 @@
 
 - Spring Boot Gradle Plugin Reference Guide         
 [https://darm.tistory.com/111](https://darm.tistory.com/111)
+
+##2장
+- Integration Testing in Spring       
+[https://www.baeldung.com/integration-testing-in-spring](https://www.baeldung.com/integration-testing-in-spring)
