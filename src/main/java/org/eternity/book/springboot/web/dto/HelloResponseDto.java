@@ -1,4 +1,4 @@
-package org.eternity.book.springboot.dto;
+package org.eternity.book.springboot.web.dto;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
