@@ -7,3 +7,17 @@
 
 - Spring Boot Gradle Plugin Reference Guide         
 [https://darm.tistory.com/111](https://darm.tistory.com/111)
+
+## 2장
+- Integration Testing in Spring       
+[https://www.baeldung.com/integration-testing-in-spring](https://www.baeldung.com/integration-testing-in-spring)
+
+## 3장
+- 스프링 부트에서 컨트롤러 테스트하기               
+[https://siyoon210.tistory.com/145](https://siyoon210.tistory.com/145)
+
+- Testing JPA Queries with @DataJpaTest         
+[https://reflectoring.io/spring-boot-data-jpa-test/](https://reflectoring.io/spring-boot-data-jpa-test/)
+
+- Spring Boot Test: Slice Test                  
+[https://cheese10yun.github.io/spring-boot-test/](https://cheese10yun.github.io/spring-boot-test/)

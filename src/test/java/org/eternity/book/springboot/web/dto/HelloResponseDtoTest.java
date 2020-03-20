@@ -1,6 +1,5 @@
 package org.eternity.book.springboot.web.dto;
 
-import org.eternity.book.springboot.dto.HelloResponseDto;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
