@@ -21,3 +21,10 @@
 
 - Spring Boot Test: Slice Test                  
 [https://cheese10yun.github.io/spring-boot-test/](https://cheese10yun.github.io/spring-boot-test/)
+
+## 4장
+- meta 요소의 http-equiv 속성 : HTML 문서의 초기정보를 설정할때              
+[http://b.redinfo.co.kr/8](http://b.redinfo.co.kr/8)
+
+- [Spring/Project] @WebMvcTest ComponentScan으로 인한 에러 해결기 
+[https://dadadamarine.github.io/java/spring/2019/04/24/spring-web-mvc-test-error.html](https://dadadamarine.github.io/java/spring/2019/04/24/spring-web-mvc-test-error.html)
