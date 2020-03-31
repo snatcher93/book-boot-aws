@@ -1,4 +1,4 @@
-package org.eternity.book.springboot.config.oauth;
+package org.eternity.book.springboot.config.oauth.dto;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -24,7 +24,8 @@ public class OAuthAttributes {
         this.picture = picture;
     }
 
-    public static OAuthAttributes of(String registrationId, String userNameAttributeName,
+    public static OAuthAttributes of(String registrationId,
+                                     String userNameAttributeName,
                                      Map<String, Object> attributes) {
         return ofGoogle(userNameAttributeName, attributes);
     }

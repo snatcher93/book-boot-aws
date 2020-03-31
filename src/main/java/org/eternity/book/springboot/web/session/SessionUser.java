@@ -1,4 +1,4 @@
-package org.eternity.book.springboot.config.oauth;
+package org.eternity.book.springboot.web.session;
 
 import lombok.Getter;
 import org.eternity.book.springboot.domain.user.User;

@@ -1,8 +1,10 @@
 package org.eternity.book.springboot.config.oauth;
 
 import lombok.RequiredArgsConstructor;
+import org.eternity.book.springboot.config.oauth.dto.OAuthAttributes;
 import org.eternity.book.springboot.domain.user.User;
 import org.eternity.book.springboot.domain.user.UserRepository;
+import org.eternity.book.springboot.web.session.SessionUser;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
@@ -23,11 +25,14 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
 
     @Override
     public OAuth2User loadUser(OAuth2UserRequest userRequest) throws OAuth2AuthenticationException {
-        OAuth2UserService delegate = new DefaultOAuth2UserService();
+        OAuth2UserService<OAuth2UserRequest, OAuth2User> delegate = new DefaultOAuth2UserService();
         OAuth2User oAuth2USer = delegate.loadUser(userRequest);
 
         String registrationId = userRequest.getClientRegistration().getRegistrationId();
-        String userNameAttributeName = userRequest.getClientRegistration().getProviderDetails().getUserInfoEndpoint().getUserNameAttributeName();
+        String userNameAttributeName = userRequest.getClientRegistration()
+                                            .getProviderDetails()
+                                            .getUserInfoEndpoint()
+                                            .getUserNameAttributeName();
 
         OAuthAttributes attributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2USer.getAttributes());
 
