@@ -1,6 +1,7 @@
 package org.eternity.book.springboot.web;
 
 import lombok.RequiredArgsConstructor;
+import org.eternity.book.springboot.config.oauth.LoginUser;
 import org.eternity.book.springboot.service.posts.PostsService;
 import org.eternity.book.springboot.web.dto.PostsResponseDto;
 import org.eternity.book.springboot.web.session.SessionUser;
@@ -18,10 +19,8 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model) {
+    public String index(@LoginUser SessionUser user, Model model) {
         model.addAttribute("posts", postsService.findAllDesc());
-
-        SessionUser user = (SessionUser)httpSession.getAttribute("user");
 
         if (user != null) {
             model.addAttribute("userName", user.getName());
