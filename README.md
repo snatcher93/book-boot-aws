@@ -28,3 +28,8 @@
 
 - [Spring/Project] @WebMvcTest ComponentScan으로 인한 에러 해결기 
 [https://dadadamarine.github.io/java/spring/2019/04/24/spring-web-mvc-test-error.html](https://dadadamarine.github.io/java/spring/2019/04/24/spring-web-mvc-test-error.html)
+
+## 8장
+- [vim 사용법]
+[https://github.com/johngrib/simple_vim_guide/blob/master/md/for_beginners.md](https://github.com/johngrib/simple_vim_guide/blob/master/md/for_beginners.md)
+
