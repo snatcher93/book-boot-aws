@@ -36,7 +36,8 @@ deply:
     bucket: book-boot-aws-build
     key: book-boot-aws.zip
     bundle_type: zip
-    application: book-boot-aws-group
+    application: book-boot-aws
+    deployment_group: book-boot-aws-group
     region: ap-northeast-2
     wait-until-deploy: true
 
