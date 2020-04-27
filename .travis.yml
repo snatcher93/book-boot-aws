@@ -15,9 +15,13 @@ cache:
 script: "./gradlew clean build"
 
 before_deploy:
-  - zip -r book-boot-aws *
-  - mkdir -p deploy
-  - mv book-boot-aws.zip deploy/book-boot-aws.zip
+  - mkdir -p before-deploy
+  - cp scripts/*.sh before-deploy
+  - cp appsepc.yml before-deploy
+  - cp build/libs/*.jar before-deploy
+  - cd before-deploy && zip -r before-deploy *
+  - cd .. & mkdir -p deploy
+  - mv before-deploy/before-deploy.zip deploy/book-boot-aws.zip
 
 deply:
   - provider: s3
